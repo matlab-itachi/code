@@ -21,7 +21,7 @@ if(double(T1)==0)
 sprintf('At point (%f, %f) further investigation is required',ax(i), ay(i));
 legstr = [legstr, {'Case of Further investigation'}];
 mkr = 'ko';
-else if(double(T1)<0)
+elseif(double(T1)<0)
 sprintf('The point (%f, %f) is a saddle point', ax(i), ay(i));
 legstr = [legstr, {'Saddle point'}];
 mkr = 'bv';
