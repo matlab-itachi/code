@@ -1,6 +1,6 @@
 clc
 clear all
-syms x y x
+syms x y z
 
 F = input('Enter the vector field in the form i, j, k: ');
 P = inline(vectorize(F(1)), 'x', 'y', 'z');
